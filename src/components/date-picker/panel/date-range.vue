@@ -372,6 +372,11 @@
                 this.minDate = val.minDate;
                 this.maxDate = val.maxDate;
 
+                this.$nextTick(() => {
+                    this.minDate = val.minDate;
+                    this.maxDate = val.maxDate;
+                });
+                
                 if (!close) return;
 //                if (!this.showTime) {
 //                    this.handleConfirm(false);
